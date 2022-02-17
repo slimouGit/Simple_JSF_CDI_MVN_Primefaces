@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta charset="UTF-8"></meta>
+	<title>JSFCDIMavenProject</title>
+</h:head>
+<f:view>
+	<p:outputLabel value="JSFCDIMavenProject" />
+	<h:form>
+		<p:commandButton value="Hello Service"
+			action="#{dummyBean.helloService}" update="@form" />
+		<br />
+		<p:outputLabel value="#{dummyBean.hello}" />
+	</h:form>
+
+	<h:form>
+		<p:tabMenu>
+			<p:menuitem value="ViewScoped" outcome="viewscoped"/>
+			<p:menuitem value="RequestScoped" outcome="requestscoped"/>
+			<p:menuitem value="ApplicationScoped"  outcome="applicationscoped"/>
+			<p:menuitem value="SessionScoped"  outcome="sessionscoped"/>
+			<p:menuitem value="Without any Scope" outcome="withoutscope"/>
+		</p:tabMenu>
+	</h:form>
+
+</f:view>
+</html>
