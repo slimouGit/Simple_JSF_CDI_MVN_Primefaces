@@ -16,7 +16,10 @@
             <p:inputText id="text" value="#{viewBean.text}"/>
             <p:outputLabel id="display" value="#{viewBean.text}"/>
         </h:panelGrid>
-        <p:commandButton value="Submit" action="#{viewBean.druckeEingabeInKonsole()}" update="display" styleClass="p-mt-3" />
+        <p:commandButton value="Submit" action="#{viewBean.druckeEingabeInKonsole}" update="display" styleClass="p-mt-3" />
+	</h:form>
+	<h:form>
+	<p:commandButton value="back" action="#{viewBean.redirect}" update="form" ajax="false" process="@this"/>
 	</h:form>
 </h:body>
 </html>

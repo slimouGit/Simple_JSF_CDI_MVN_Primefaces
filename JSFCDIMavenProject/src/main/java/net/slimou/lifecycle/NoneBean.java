@@ -3,7 +3,7 @@ package net.slimou.lifecycle;
 import javax.inject.Named;
 
 @Named
-public class NoneBean {
+public class NoneBean extends AbstractNavigation {
 	
 	private String text;
 

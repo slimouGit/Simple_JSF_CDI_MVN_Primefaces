@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 @Named
 @SessionScoped
-public class SessionBean implements Serializable {
+public class SessionBean extends AbstractNavigation implements Serializable {
 
 	private static final long serialVersionUID = -9080543072492671910L;
 	

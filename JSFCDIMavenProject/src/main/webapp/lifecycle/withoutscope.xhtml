@@ -18,5 +18,9 @@
         </h:panelGrid>
         <p:commandButton value="Submit" action="#{noneBean.druckeEingabeInKonsole}" update="display" styleClass="p-mt-3" />
 	</h:form>
+	<h:form>
+		<p:commandButton value="back" action="#{noneBean.redirect}"
+			update="form" ajax="false" process="@this" />
+	</h:form>
 </h:body>
 </html>

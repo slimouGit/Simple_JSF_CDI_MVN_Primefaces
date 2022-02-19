@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 @Named
 @ViewScoped
-public class ViewBean implements Serializable {
+public class ViewBean extends AbstractNavigation implements Serializable  {
 
 	private static final long serialVersionUID = 1166440779679935889L;
 	

@@ -5,3 +5,4 @@ net\slimou\lifecycle\RequestBean.class
 net\slimou\lifecycle\ApplicationBean.class
 net\slimou\dummies\DummyBean.class
 net\slimou\lifecycle\NoneBean.class
+net\slimou\lifecycle\AbstractNavigation.class

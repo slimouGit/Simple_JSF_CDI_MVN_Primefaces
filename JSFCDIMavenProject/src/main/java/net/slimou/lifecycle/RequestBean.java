@@ -5,7 +5,7 @@ import javax.inject.Named;
 
 @Named
 @RequestScoped
-public class RequestBean {
+public class RequestBean extends AbstractNavigation {
 
 	private String text;
 
